@@ -147,7 +147,7 @@ int main() {
     bool running = true;
 
     auto last = std::chrono::steady_clock::now();
-    const std::chrono::milliseconds targetFrame(10); // 100 Hz display => 10ms
+    const std::chrono::milliseconds targetFrame(16); // 60 Hz display => 16.67ms
 
     while (running) {
         auto now = std::chrono::steady_clock::now();
